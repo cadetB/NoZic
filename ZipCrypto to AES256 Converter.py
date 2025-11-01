@@ -160,9 +160,9 @@ def is_zipcrypto_zip(filepath):
                 # flag_bits의 첫 비트(0x1) = 암호화 여부
                 if (info.flag_bits & 1) != 0:
                     # 암호화되었더라도, 압축 방식(compress_type)이
-                    # 99 (AES)가 아니어야 ZipCrypto입니다.
+                    # 99 (AES)가 아니어야 ZipCrypto
                     if info.compress_type != 99:
-                        return True # 이것이 ZipCrypto입니다.
+                        return True # 이것이 ZipCrypto
         
         # 모든 파일을 검사했지만 ZipCrypto를 찾지 못함
         # (AES이거나, 암호화되지 않았거나, 파일이 없는 경우)
@@ -721,5 +721,6 @@ if __name__ == "__main__":
     if not app.bandizip_path:
         app.verify_btn.config(state=tk.DISABLED)
         app.update_status("Bandizip 없음. pyzipper로 변환 시도. (검증 기능 비활성화)")
+
 
     app.mainloop()
