@@ -1,6 +1,6 @@
 # ZipCrypto to AES256 Converter.py  (.zip 전용 + ZipCrypto → AES 변환(pyzipper 우선, 폴백) + GUI)
 # 작성자: Geunho Baek, Donghyun Kim
-# 언어: Python 3.10+, OS: Windows
+# 언어: Python  3.8.5, OS: Windows
 
 import os 
 import sys
@@ -724,3 +724,4 @@ if __name__ == "__main__":
 
 
     app.mainloop()
+
