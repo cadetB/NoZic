@@ -30,8 +30,8 @@ except Exception:       # 모듈이 없는 경우, 관련 기능을 비활성화
 # 외부 모듈(pyzipper) 설치/로딩 헬퍼
 def setup_dependencies():
     """
-    - pywin32 (win32api)와 pyzipper를 자동으로 설치 시도합니다.
-    - 설치 후 재시작 알림을 하지 않으며, 설치 결과를 True/False로 반환합니다.
+    - pywin32 (win32api)와 pyzipper를 자동으로 설치 시도
+    - 설치 후 재시작 알림을 하지 않으며, 설치 결과를 True/False로 반환
     """
     ok = True
     # pywin32 (win32api) 체크/설치
@@ -148,25 +148,19 @@ def check_bandizip_version(bandizip_exe_path):
 # ZIPCrypto 판별
 # ----------------------------
 def is_zipcrypto_zip(filepath):
-    """
-    파일이 ZipCrypto로 암호화되었는지 확인합니다.
-    AES(compress_type == 99)는 ZipCrypto가 아닙니다.
-    """
+
     # 반디집 전용 포맷(.zipx)은 표준 zipfile 라이브러리가 처리 못하므로 무시
     if filepath.lower().endswith('.zipx'):
         return False
     try:
         with zipfile.ZipFile(filepath, "r") as zf:      # zipfile.ZipFile: zip 파일을 읽기 모드('r')로 열기
             for info in zf.infolist():                  # zf.infolist(): zip 아카이브 내의 모든 파일/폴더 정보 목록 반환
-                # flag_bits의 첫 비트(0x1) = 암호화 여부
-                if (info.flag_bits & 1) != 0:
-                    # 암호화되었더라도, 압축 방식(compress_type)이
-                    # 99 (AES)가 아니어야 ZipCrypto입니다.
-                    if info.compress_type != 99:
-                        return True # 이것이 ZipCrypto입니다.
-        
-        # 모든 파일을 검사했지만 ZipCrypto를 찾지 못함
-        # (AES이거나, 암호화되지 않았거나, 파일이 없는 경우)
+                                # 
+                if (info.flag_bits & 0x41) == 1:  #  general purpose bit조사 
+                    # Bit 1인지 (파일 암호화 여부) & Bit6이 0인지 (강력한 암화가 아닌지)
+                    if b'\x01\x99' in info.extra:  # # AES 시그니처(0x9901)가 Extra Field에 있으면 AES
+                        return False
+                    return True
         return False
     except zipfile.BadZipFile:
         # zip 파일 형식이 아니거나 손상된 경우
@@ -324,10 +318,6 @@ def recompress_file_with_aes256(bandizip_path, target_file_path, old_password, n
         traceback.print_exc()
         return False
 # ----------------------------
-# [제거됨] 검증(반디집 't' 명령어)
-# ----------------------------
-# verify_aes_conversion 함수가 요청에 따라 제거되었습니다.
-
 # ----------------------------
 # 디렉터리 스캐너 (.zip 전용)
 # ----------------------------
