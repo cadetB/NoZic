@@ -50,7 +50,7 @@ The development of this tool is awaiting the results of the following journal co
 
 ## 📝 License
 
-This project is distributed under the **[---]** License.
+This project is distributed under the **[CC BY-NC 4.0]** License.
 ---
 ---
 # NoZic: 압축 유틸리티 보안 설정 및 ZipCrypto 파일 변환 도구
@@ -102,4 +102,4 @@ This project is distributed under the **[---]** License.
 
 ## 📝 라이선스 (License)
 
-이 프로젝트는 **[---]** 하에 배포된다.
+이 프로젝트는 **[CC BY-NC 4.0]** 하에 배포된다.
