@@ -1,8 +1,7 @@
 # NoZic: Archive Utility Security Configuration and ZipCrypto File Converter
 
 [![GitHub Stars](https://img.shields.io/github/stars/cadetB/NoZic?style=social)](https://github.com/cadetB/NoZic/stargazers)
-[![GitHub License](https://img.shields.io/github/license/cadetB/NoZic)](LICENSE)
-
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue)](https://creativecommons.org/licenses/by-nc/4.0/)
 ---
 
 ## 💡 Introduction
@@ -56,8 +55,7 @@ This project is distributed under the **[CC BY-NC-4.0]** License.
 # NoZic: 압축 유틸리티 보안 설정 및 ZipCrypto 파일 변환 도구
 
 [![GitHub Stars](https://img.shields.io/github/stars/cadetB/NoZic?style=social)](https://github.com/cadetB/NoZic/stargazers)
-[![GitHub License](https://img.shields.io/github/license/cadetB/NoZic)](LICENSE)
-
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue)](https://creativecommons.org/licenses/by-nc/4.0/)
 ---
 
 ## 💡 소개 (Introduction)
