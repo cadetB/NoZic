@@ -50,6 +50,20 @@ The development of this tool is awaiting the results of the following journal co
 ## 📝 License
 
 This project is distributed under the **[CC BY-NC-4.0]** License.
+
+## 📜 Citation
+
+@article{ART003276970,
+author={Geunho Baek and Kim Dong Hyun},
+title={A Study on Mitigation for Insecure ZipCrypto Usage in Archive Utilities : Focusing on a Tool for Security Configuration Enforcement and AES Conversion of Legacy ZIP Files},
+journal={Journal of Defense and Security},
+issn={2671-8111},
+year={2025},
+volume={7},
+number={2},
+pages={441-467}
+}
+
 ---
 ---
 # NoZic: 압축 유틸리티 보안 설정 및 ZipCrypto 파일 변환 도구
@@ -101,3 +115,16 @@ This project is distributed under the **[CC BY-NC-4.0]** License.
 ## 📝 라이선스 (License)
 
 이 프로젝트는 **[CC BY-NC-4.0]** 하에 배포된다.
+
+## 📜 인용
+
+@article{ART003276970,
+author={백근호 and 김동현},
+title={압축 유틸리티의 취약한 ZipCrypto 사용 문제에 대한 해결 방안 연구 : 보안 설정 변경 및 기존 ZIP 파일의 AES 변환 도구 구현을 중심으로},
+journal={국방과 보안},
+issn={2671-8111},
+year={2025},
+volume={7},
+number={2},
+pages={441-467}
+}
