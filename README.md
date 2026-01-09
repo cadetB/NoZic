@@ -37,16 +37,6 @@ The implementation of this program is based on **research currently submitted to
     2.  `Test_zip crypto(AES로 변환완료).zip`: ZIP format converted to AES using the program (pw: 123456789)
 
 
-## 📄 Related Research
-
-The development of this tool is awaiting the results of the following journal competition:
-
-* **Paper Title (English):** A Study on Mitigation for Insecure ZipCrypto Usage in Archive Utilities: Focusing on a Tool for Security Configuration Enforcement and AES Conversion of Legacy ZIP Files
-* **Journal:** 「Journal of Defense and Security」(KCI-level) - *Currently submitted and under review*
-* **Authors:** Geunho Baek, Donghyun Kim
-
-
-
 ## 📝 License
 
 This project is distributed under the **[CC BY-NC-4.0]** License.
@@ -103,14 +93,6 @@ pages={441-467}
   1. Test_zip crypto.zip : Zip Crypto로 압축된 zip 포맷 (pw: 123)
   2. Test_zip crypto(AES로 변환완료).zip : 프로그램을 통해 AES로 변환한 zip 포맷 (pw: 123456789)
 
-  
-## 📄 관련 논문 (Related Research)
-
-이 도구의 개발은 다음 논문 공모 결과를 기다리고 있다:
-
-* **논문 제목 (한글):** 압축 유틸리티의 취약한 ZipCrypto 사용 문제에 대한 해결 방안 연구: 보안 설정 변경 및 기존 ZIP 파일의 AES 변환 도구 구현을 중심으로
-* **학술지:** 「국방과 보안」 (KCI급) - *현재 논문 공모 및 심사 진행 중*
-* **저자:** 백근호, 김동현
 
 ## 📝 라이선스 (License)
 
